@@ -8,7 +8,7 @@ LABEL \
   Maintainer="issenn <issenn@hellotalk.com>" \
   com.java.is-beta="" \
   com.java.is-production="" \
-  com.java.version="0.0.4" \
+  com.java.version="0.1.0" \
   com.java.release-date="2019-03-17"
 
 # SHELL ["/bin/bash", "-c"]
@@ -16,18 +16,12 @@ LABEL \
 # Container variables
 ENV \
   TERM="xterm" \
-  LANG=C.UTF-8 \
-  # LANG="en_US.UTF-8" \
-  LANGUAGE=C.UTF-8 \
-  # LANGUAGE="en_US.UTF-8" \
-  LC_ALL=C.UTF-8 \
-  # LC_ALL="en_US.UTF-8" \
-  LC_PAPER=C.UTF-8 \
-  LC_NAME=C.UTF-8 \
-  LC_ADDRESS=C.UTF-8 \
-  LC_TELEPHONE=C.UTF-8 \
-  LC_MEASUREMENT=C.UTF-8 \
-  LC_IDENTIFICATION=C.UTF-8 \
+  # LANG=C.UTF-8 \
+  LANG="en_US.UTF-8" \
+  # LANGUAGE=C.UTF-8 \
+  LANGUAGE="en_US.UTF-8" \
+  # LC_ALL=C.UTF-8 \
+  LC_ALL="en_US.UTF-8" \
   TIMEZONE="Asia/Shanghai"
 
 # RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories
