@@ -163,7 +163,7 @@ RUN \
   rm -f "${JAVA_HOME}/jre/lib/security/README.txt" && \
   apk del build-dependencies curl ca-certificates tar && \
   \
-  echo 'public class Main { public static void main(String[] args) { System.out.println("Java code is running fine!"); } }' > Main.java && \
+  echo 'public class Main { public static void main(String[] args) { System.out.println("Ф Java code is running fine!"); } }' > Main.java && \
   javac Main.java && \
   java Main && \
   rm -rf "/tmp/"* \
