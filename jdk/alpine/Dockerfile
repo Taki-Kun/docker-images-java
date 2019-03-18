@@ -39,7 +39,6 @@ RUN set -ex \
           gzip \
           tar \
           curl \
-  && apk del .build-dependencies \
   && echo "${TIMEZONE}" > /etc/TZ \
   && ln -sf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime \
   # Network fix
