@@ -30,7 +30,7 @@ ENV \
 RUN set -ex \
   && apk update \
   && apk upgrade \
-  && apk add \
+  && apk add --no-cache --virtual=.build-dependencies \
           bash \
           tzdata \
           vim \
@@ -39,6 +39,7 @@ RUN set -ex \
           gzip \
           tar \
           curl \
+  && apk del .build-dependencies \
   && echo "${TIMEZONE}" > /etc/TZ \
   && ln -sf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime \
   # Network fix
