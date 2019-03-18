@@ -30,7 +30,7 @@ ENV \
 RUN set -ex \
   && apk update \
   && apk upgrade \
-  && apk add --no-cache --virtual=.build-dependencies \
+  && apk add --no-cache \
           bash \
           tzdata \
           vim \
