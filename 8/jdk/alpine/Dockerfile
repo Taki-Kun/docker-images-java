@@ -1,15 +1,17 @@
 FROM alpine:3.9
 
+# Image Metadata
 LABEL \
   Name="JDK Base Image On Alpine" \
   Description="Oracle Java 8 Standard Edition Development Kit Base Image On Alpine" \
-  Vendor="HelloTalk"\
+  Vendor="Issenn"\
   Version="0.1.0" \
   Maintainer="issenn <issenn@hellotalk.com>" \
-  com.java.is-beta="" \
-  com.java.is-production="" \
-  com.java.version="0.1.0" \
-  com.java.release-date="2019-03-17"
+  com.issenn.application.java.jdk.is-beta="" \
+  com.issenn.application.java.jdk.is-production="" \
+  com.issenn.application.java.jdk.version="" \
+  com.issenn.application.image.build-date="2019-03-19" \
+  com.issenn.application.image.release-date="2019-03-19"
 
 # SHELL ["/bin/bash", "-c"]
 
