@@ -107,6 +107,7 @@ ENV \
 ENV \
   JAVA_8_HOME="/usr/lib/jvm/java-${JAVA_VERSION_MAJOR}-oracle" \
   PATH="${PATH}:${JAVA_HOME}/bin"
+  # CLASSPATH=.:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar
 
 RUN \
   apk add --no-cache --virtual=build-dependencies ca-certificates unzip && \
